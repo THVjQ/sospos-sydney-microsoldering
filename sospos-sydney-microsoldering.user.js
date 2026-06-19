@@ -29,41 +29,42 @@
                 width: 44px;
                 height: 44px;
                 border-radius: 50%;
-                background: #7c3aed;
+                background: #0d9488;
                 color: white;
                 border: none;
                 font-size: 20px;
                 cursor: pointer;
                 z-index: 99999;
-                box-shadow: 0 3px 14px rgba(124,58,237,.55);
+                box-shadow: 0 3px 14px rgba(13,148,136,.55);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 transition: background 0.15s;
             }
-            #fab-sydney:hover { background: #6d28d9; }
+            #fab-sydney:hover { background: #0f766e; }
 
             #syd-overlay {
                 position: fixed; inset: 0;
-                background: rgba(0,0,0,0.55);
+                background: rgba(0,0,0,0.65);
                 z-index: 999999;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                font-family: 'Segoe UI', system-ui, sans-serif;
             }
             #syd-box {
-                background: #fff;
+                background: #0f172a;
+                border: 1px solid #1e293b;
                 border-radius: 14px;
                 padding: 24px;
                 width: 460px;
                 max-width: 96vw;
-                box-shadow: 0 24px 64px rgba(0,0,0,0.28);
+                box-shadow: 0 24px 64px rgba(0,0,0,0.6);
             }
             #syd-box h2 {
                 margin: 0 0 16px;
                 font-size: 17px;
-                color: #1e1b4b;
+                color: #e2e8f0;
                 display: flex;
                 align-items: center;
                 gap: 8px;
@@ -75,15 +76,17 @@
             }
             #syd-ticketnum {
                 flex: 1;
-                border: 1.5px solid #d1d5db;
+                background: #1e293b;
+                border: 1.5px solid #334155;
+                color: #e2e8f0;
                 border-radius: 7px;
                 padding: 9px 12px;
                 font-size: 14px;
                 text-transform: uppercase;
             }
-            #syd-ticketnum:focus { outline: none; border-color: #7c3aed; }
+            #syd-ticketnum:focus { outline: none; border-color: #14b8a6; }
             #syd-search-btn {
-                background: #7c3aed;
+                background: #14b8a6;
                 color: white;
                 border: none;
                 padding: 9px 16px;
@@ -92,14 +95,14 @@
                 font-weight: 600;
                 cursor: pointer;
             }
-            #syd-search-btn:hover { background: #6d28d9; }
+            #syd-search-btn:hover { background: #0d9488; }
             #syd-found {
-                background: #f5f3ff;
-                border: 1px solid #ddd6fe;
+                background: #06201d;
+                border: 1px solid #14b8a6;
                 border-radius: 8px;
                 padding: 10px 14px;
                 font-size: 13px;
-                color: #4c1d95;
+                color: #5eead4;
                 margin-bottom: 14px;
                 display: none;
             }
@@ -107,7 +110,7 @@
                 display: block;
                 font-size: 12px;
                 font-weight: 600;
-                color: #6b7280;
+                color: #64748b;
                 margin-bottom: 4px;
                 margin-top: 12px;
                 text-transform: uppercase;
@@ -116,23 +119,24 @@
             #syd-box textarea,
             #syd-box input[type="text"] {
                 width: 100%;
-                border: 1.5px solid #d1d5db;
+                background: #1e293b;
+                border: 1.5px solid #334155;
+                color: #e2e8f0;
                 border-radius: 7px;
                 padding: 8px 10px;
                 font-size: 13px;
                 box-sizing: border-box;
-                color: #111;
             }
             #syd-box textarea { height: 72px; resize: vertical; }
             #syd-box input[type="text"]:focus,
-            #syd-box textarea:focus { outline: none; border-color: #7c3aed; }
+            #syd-box textarea:focus { outline: none; border-color: #14b8a6; }
             #syd-preview {
-                background: #f0fdf4;
-                border: 1px solid #bbf7d0;
+                background: #0a1120;
+                border: 1px solid #14b8a6;
                 border-radius: 8px;
                 padding: 10px 14px;
                 font-size: 12px;
-                color: #166534;
+                color: #5eead4;
                 margin-top: 14px;
                 display: none;
                 white-space: pre-wrap;
@@ -145,25 +149,25 @@
                 justify-content: flex-end;
             }
             #syd-cancel-btn {
-                background: #f3f4f6; color: #374151;
+                background: #334155; color: #94a3b8;
                 border: none; padding: 9px 18px;
                 border-radius: 7px; cursor: pointer; font-size: 13px;
             }
             #syd-preview-btn {
-                background: #ecfdf5; color: #065f46;
-                border: 1px solid #6ee7b7; padding: 9px 14px;
+                background: #134e4a; color: #5eead4;
+                border: 1px solid #14b8a6; padding: 9px 14px;
                 border-radius: 7px; cursor: pointer;
                 font-size: 13px; font-weight: 600;
             }
             #syd-open-btn {
-                background: #7c3aed; color: white;
+                background: #0d9488; color: white;
                 border: none; padding: 9px 18px;
                 border-radius: 7px; cursor: pointer;
                 font-size: 13px; font-weight: bold;
             }
-            #syd-open-btn:hover { background: #6d28d9; }
+            #syd-open-btn:hover { background: #0f766e; }
             #syd-status-msg {
-                font-size: 12px; color: #dc2626;
+                font-size: 12px; color: #f87171;
                 margin-top: 8px; min-height: 16px;
             }
         `;
