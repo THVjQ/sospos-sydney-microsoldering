@@ -1,3 +1,4 @@
+// SOS
 // ==UserScript==
 // @name         SosPos → Sydney Microsoldering v7
 // @namespace    http://tampermonkey.net/
